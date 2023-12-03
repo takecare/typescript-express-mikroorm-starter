@@ -1,7 +1,7 @@
-import express, { Express, Request, Response } from "express";
 import { MikroORM } from "@mikro-orm/postgresql";
-import mikroOrmConfig from "./mikro-orm.config";
 import dotenv from "dotenv";
+import express, { Express } from "express";
+import mikroOrmConfig from "./mikro-orm.config";
 
 dotenv.config();
 

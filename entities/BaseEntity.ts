@@ -1,10 +1,6 @@
-import { Entity, Property, BeforeCreate, BeforeUpdate } from "@mikro-orm/core";
+import { BeforeCreate, BeforeUpdate, Property } from "@mikro-orm/core";
 
-// @Entity()
 export abstract class BaseEntity {
-  // @PrimaryKey()
-  // id: string = v4();
-
   @Property({ type: "date", onUpdate: () => new Date() })
   createdAt: Date = new Date();
 
