@@ -1,0 +1,4 @@
+node_modules/
+dist/
+mikroorm_cache/
+.env
