@@ -1,9 +1,9 @@
-import { MikroORM } from "@mikro-orm/postgresql";
 import dotenv from "dotenv";
+dotenv.config();
+
+import { MikroORM } from "@mikro-orm/postgresql";
 import express, { Express } from "express";
 import mikroOrmConfig from "./mikro-orm.config";
-
-dotenv.config();
 
 const initializeOrm = async () => {
   const orm = await MikroORM.init(mikroOrmConfig);

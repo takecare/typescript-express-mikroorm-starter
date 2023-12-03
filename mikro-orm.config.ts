@@ -1,8 +1,5 @@
 import { Options } from "@mikro-orm/core";
 import { TsMorphMetadataProvider } from "@mikro-orm/reflection";
-import dotenv from "dotenv";
-
-dotenv.config();
 
 const config: Options = {
   baseDir: process.cwd(),
