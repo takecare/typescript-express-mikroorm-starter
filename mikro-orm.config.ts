@@ -17,6 +17,9 @@ const config: Options = {
     pretty: process.env.NODE_ENV !== "production",
     options: { cacheDir: process.cwd() + "/mikroorm_cache" },
   },
+  migrations: {
+    disableForeignKeys: false,
+  },
   debug: process.env.NODE_ENV !== "production",
 };
 
