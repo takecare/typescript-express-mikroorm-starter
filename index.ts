@@ -16,8 +16,6 @@ import { RequestContext } from "@mikro-orm/core";
 
 const initializeOrm = async () => {
   const orm = await MikroORM.init(mikroOrmConfig);
-  const migrator = orm.getMigrator();
-  // await migrator.up();
   return orm;
 };
 
